@@ -13,6 +13,8 @@ import {
 const colorGithub = '#010409';
 const colorFontGithub = '#C9D1D9';
 const colorDarkFontGithub = '#4F565E';
+const boxActivityColor = '#39D353';
+const darkBoxActivityColor = '#006D32';
 
 const imageProfileGithub =
   'https://avatars.githubusercontent.com/u/28990749?v=4';
@@ -55,6 +57,112 @@ const App = () => {
           Software engineer | Leader tech at Fleye | Mobile Developer | Mentor
           at Catapulta.club @ismaelmoreiraa | Prof. na DIO
         </Text>
+        <View style={style.containerGreenBox}>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={[style.greenBox, style.greenDark]} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+          <View>
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+            <View style={style.greenBox} />
+          </View>
+        </View>
 
         <Pressable onPress={handlePressGoToGithub}>
           <View style={style.button}>
@@ -105,6 +213,7 @@ const style = StyleSheet.create({
   description: {
     fontWeight: 'bold',
     fontSize: 14,
+    textAlign: 'center',
   },
   button: {
     marginTop: 20,
@@ -115,5 +224,19 @@ const style = StyleSheet.create({
   textButton: {
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  containerGreenBox: {
+    flexDirection: 'row',
+    marginVertical: 20,
+  },
+  greenBox: {
+    margin: 1,
+    width: 15,
+    height: 15,
+    borderRadius: 5,
+    backgroundColor: darkBoxActivityColor,
+  },
+  greenDark: {
+    backgroundColor: boxActivityColor,
   },
 });
